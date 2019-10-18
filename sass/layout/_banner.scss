@@ -16,6 +16,15 @@
 .dreams-picture {
   background-image: url(../img/dreams.jpg);
 }
+.application-picture {
+  background-image: url(../img/red.jpg);
+}
+.sample-picture {
+  background-image: url(../img/book.jpg);
+}
+.meditation-picture {
+  background-image: url(../img/ahead.jpg);
+}
 
 hr {
   display: inline-block;
@@ -64,4 +73,31 @@ hr {
 }
 .vert {
   font-size: $default-font-size;
+}
+.samplereading {
+  text-align: center;
+
+  .para-sample {
+
+    ol {
+      list-style: none;
+      font-size: 1.5rem;
+     counter-reset: my-awesome-counter;
+
+      li {
+       counter-increment: my-awesome-counter;
+
+        &::before {
+         content: counter(my-awesome-counter) ". ";
+          color: teal;
+          font-weight: bold;
+          padding-right: .5rem;
+        }
+      }
+    }
+    p {
+      text-align: center;
+    }
+  }
+
 }
