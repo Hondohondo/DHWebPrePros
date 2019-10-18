@@ -1,0 +1,67 @@
+.overview-picture {
+  background-image: url(../img/overview.jpg);
+}
+.workbook-picture {
+  background-image: url(../img/workbook.jpg);
+}
+
+.feedback-picture {
+  background-image: url(../img/feedback.jpg);
+}
+
+.feature-picture {
+  background-image: url(../img/feature.jpg);
+}
+
+.dreams-picture {
+  background-image: url(../img/dreams.jpg);
+}
+
+hr {
+  display: inline-block;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  margin-bottom: 5px;
+  border:0px;
+  height: 2px;
+//  border: .5px solid grey;
+  background-image: linear-gradient(90deg, rgba(0,0,0,.05) 0%,
+                                            rgba(0,0,0,.1) 100%);
+}
+
+.inside-nav-container {
+    text-align: center;
+}
+
+.inside-nav {
+
+  position: relative;
+  display: inline-block;
+
+    li {
+        font-size: $default-font-size;
+        list-style: none;
+        display: inline-block;
+      a {
+
+        &:link,
+        &:visited {
+          text-decoration: none;
+          color: teal;
+          margin-right: 1rem;
+          margin-left: 1rem;
+          padding-bottom: 3px;
+          border-bottom: 1px solid transparent;
+        }
+        &:hover,
+        &:active {
+            border-bottom: 1px solid teal;
+        }
+      }
+
+    }
+
+}
+.vert {
+  font-size: $default-font-size;
+}
