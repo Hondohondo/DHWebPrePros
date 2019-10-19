@@ -50,6 +50,12 @@
     &-content {
       padding: 7%;
 
+      span {
+        display: inline-block;
+        font-size: 1.6rem;
+        color: $color-grey-dark;
+      }
+
       h1 {
         @include heading-uno;
       }

@@ -407,6 +407,24 @@ input {
 .start-picture {
   background-image: url(../img/flower.jpg); }
 
+.faqs-picture {
+  background-image: url(../img/kobe.jpg); }
+
+.modules-picture {
+  background-image: url(../img/mountain.jpg); }
+
+.lifestudy-picture {
+  background-image: url(../img/page.jpg); }
+
+.depthcontext-picture {
+  background-image: url(../img/coral.jpg); }
+
+.l-integration-picture {
+  background-image: url(../img/blur.jpg); }
+
+.l-experience-picture {
+  background-image: url(../img/adventure.jpg); }
+
 hr {
   display: inline-block;
   padding-left: 10rem;
@@ -422,6 +440,10 @@ hr {
 .work-hr {
   padding-left: 5rem;
   padding-right: 5rem; }
+
+.mod-hr {
+  padding-left: 1rem;
+  padding-right: 1rem; }
 
 .inside-nav-container {
   text-align: center; }
@@ -502,6 +524,10 @@ hr {
     background-size: cover; }
   .section-inside-content {
     padding: 7%; }
+    .section-inside-content span {
+      display: inline-block;
+      font-size: 1.6rem;
+      color: #777; }
     .section-inside-content h1 {
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       font-size: 2rem;
