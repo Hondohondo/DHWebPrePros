@@ -25,6 +25,12 @@
 .meditation-picture {
   background-image: url(../img/ahead.jpg);
 }
+.workshop-picture {
+  background-image: url(../img/beach.jpg);
+}
+.start-picture {
+  background-image: url(../img/flower.jpg);
+}
 
 hr {
   display: inline-block;
@@ -38,8 +44,14 @@ hr {
                                             rgba(0,0,0,.1) 100%);
 }
 
+.work-hr {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
 .inside-nav-container {
     text-align: center;
+    // overflow: hidden;
 }
 
 .inside-nav {
