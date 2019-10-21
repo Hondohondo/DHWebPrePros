@@ -13,12 +13,12 @@
 }
 
 .hidepara label h6 {
-  cursor: pointer;
+  //cursor: pointer;
   //display: block;
    &:hover,
    &:active {
      //text-decoration: underline;
-     border-bottom: 1px solid teal;
+    // border-bottom: 1px solid teal;
    }
 }
 
@@ -55,6 +55,6 @@
 input {
   //position: absolute;
   //left: -999rem;
-  opacity: 0;
+//  opacity: 0;
   //display: hidden;
 }

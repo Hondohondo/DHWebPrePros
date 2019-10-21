@@ -138,11 +138,6 @@ body {
   -webkit-transition: all .2s;
   -o-transition: all .2s;
   transition: all .2s; }
-  .heading-secondary:hover {
-    -webkit-transform: skewY(2deg) skewX(15deg) scale(1.1);
-    -ms-transform: skewY(2deg) skewX(15deg) scale(1.1);
-    transform: skewY(2deg) skewX(15deg) scale(1.1);
-    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
 .heading-tertiary {
   font-size: 1.6rem;
@@ -166,6 +161,9 @@ body {
 .u-margin-bottom-small {
   margin-bottom: 1.5rem; }
 
+.u-margin-bottom-small-2 {
+  margin-bottom: 2.5rem; }
+
 .u-margin-top-big {
   margin-top: 8rem; }
 
@@ -174,6 +172,9 @@ body {
 
 .u-margin-top-small {
   margin-top: 1.5rem; }
+
+.u-margin-top-small-2 {
+  margin-top: 2.5rem; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -261,6 +262,133 @@ body {
   -ms-transform: translateY(0);
   transform: translateY(0); }
 
+.bton,
+.bton:link,
+.bton:visited {
+  font-size: 1.6rem;
+  padding: 1.4rem 3rem;
+  border-radius: 10rem;
+  text-transform: uppercase;
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  font-weight: 400;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  /*Add later when we use this for the button in form*/
+  border: none;
+  cursor: pointer; }
+
+.bton:hover {
+  -webkit-transform: translateY(-3px);
+  -ms-transform: translateY(-3px);
+  transform: translateY(-3px);
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15); }
+
+.bton:active {
+  -webkit-transform: translateY(-1px);
+  -ms-transform: translateY(-1px);
+  transform: translateY(-1px);
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); }
+
+.bton:focus {
+  outline: none;
+  background-color: #009999; }
+
+.bton--white {
+  background-color: #fff;
+  color: #777; }
+
+.bton--white::after {
+  background-color: #fff; }
+
+.bton--green {
+  background-color: teal;
+  color: #fff; }
+
+.bton--green::after {
+  background-color: teal; }
+
+.login-form {
+  margin: 5rem auto;
+  max-width: 65rem;
+  background-color: #fff;
+  -webkit-box-shadow: 0 2.5rem 8rem 2rem rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2.5rem 8rem 2rem rgba(0, 0, 0, 0.06);
+  padding: 5rem 7rem;
+  border-radius: 5px; }
+
+.heading-secondary {
+  font-size: 2.25rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: -webkit-gradient(linear, left top, right top, from(#28b487), to(teal));
+  background-image: -webkit-linear-gradient(left, #28b487, teal);
+  background-image: -o-linear-gradient(left, #28b487, teal);
+  background-image: linear-gradient(to right, #28b487, teal);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 0.1rem;
+  line-height: 1.3;
+  display: inline-block;
+  margin-bottom: 1rem; }
+
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem; }
+
+.ma-bt-lg {
+  margin-bottom: 3.5rem !important; }
+
+.form__group:not(:last-child) {
+  margin-bottom: 2.5rem; }
+
+.form__label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem; }
+
+.form__input {
+  display: block;
+  font-family: inherit;
+  font-size: 1.5rem;
+  color: inherit;
+  padding: 1.25rem 1.75rem;
+  border: none;
+  width: 100%;
+  background-color: #f2f2f2;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /* Pseudo element (a visible thing that isn't really in the DOM).
+      Also needs -ms- */ }
+
+.form__input:focus {
+  outline: none;
+  border-bottom: 3px solid #55c57a; }
+
+.form__input:focus:invalid {
+  border-bottom: 3px solid #ff7730; }
+
+.form__input::-webkit-input-placeholder {
+  color: #bbb; }
+
+textarea {
+  resize: vertical; }
+
 .footer {
   background-color: #005050;
   text-align: center;
@@ -346,11 +474,6 @@ body {
   transition: all .5s ease;
   margin-bottom: 2rem; }
 
-.hidepara label h6 {
-  cursor: pointer; }
-  .hidepara label h6:hover, .hidepara label h6:active {
-    border-bottom: 1px solid teal; }
-
 .innerpara {
   padding: 2rem; }
 
@@ -373,9 +496,6 @@ body {
       color: teal;
       font-weight: bold;
       padding-right: .5rem; }
-
-input {
-  opacity: 0; }
 
 .overview-picture {
   background-image: url(../img/overview.jpg); }
@@ -410,6 +530,12 @@ input {
 .faqs-picture {
   background-image: url(../img/kobe.jpg); }
 
+.reasons-picture {
+  background-image: url(../img/fish.jpg); }
+
+.faq-picture {
+  background-image: url(../img/bloom.jpg); }
+
 .modules-picture {
   background-image: url(../img/mountain.jpg); }
 
@@ -424,6 +550,15 @@ input {
 
 .l-experience-picture {
   background-image: url(../img/adventure.jpg); }
+
+.contact-picture {
+  background-image: url(../img/sunny.jpg); }
+
+.support-picture {
+  background-image: url(../img/autumn.jpg); }
+
+.refer-picture {
+  background-image: url(../img/trees.jpg); }
 
 hr {
   display: inline-block;
