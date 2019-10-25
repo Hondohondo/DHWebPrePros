@@ -619,6 +619,40 @@ hr {
   .samplereading .para-sample p {
     text-align: center; }
 
+.ordered-list p {
+  margin-left: 2.5rem; }
+
+.ordered-list ul li {
+  margin-left: 2.5rem; }
+
+.ordered-list .ordered-green {
+  list-style: none;
+  counter-reset: my-awesome-counter; }
+  .ordered-list .ordered-green .list-green {
+    counter-increment: my-awesome-counter;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: teal; }
+    .ordered-list .ordered-green .list-green::before {
+      content: counter(my-awesome-counter) ". ";
+      color: teal;
+      font-weight: bold;
+      padding-right: .5rem; }
+
+table {
+  font-size: 1.6rem;
+  margin-left: 2.5rem; }
+  table th {
+    text-align: left;
+    color: teal;
+    background-color: #f7f7f7;
+    padding: 1rem;
+    border-bottom: 1px solid #e8e8e8; }
+  table td {
+    padding: 1rem; }
+  table tr:nth-child(3) {
+    background-color: #fcfcfc; }
+
 .section-inside {
   background-color: #fff; }
   .section-inside-header {
