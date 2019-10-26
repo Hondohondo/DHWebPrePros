@@ -76,6 +76,17 @@
                     }
                 }
             }
+
+            //nested sub-links in the navigation marked by disc
+            &--nested {
+
+              list-style-type: disc;
+              margin-left: 7rem;
+              margin-bottom: -1rem;
+
+            }
+
+
         }
     }
 

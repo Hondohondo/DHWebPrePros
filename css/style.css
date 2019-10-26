@@ -560,6 +560,24 @@ textarea {
 .refer-picture {
   background-image: url(../img/trees.jpg); }
 
+.leader-picture {
+  background-image: url(../img/beachbeauty.jpg); }
+
+.intro-picture {
+  background-image: url(../img/leader.jpg); }
+
+.bground-picture {
+  background-image: url(../img/clear.jpg); }
+
+.desc-picture {
+  background-image: url(../img/flowers.jpg); }
+
+.staff-picture {
+  background-image: url(../img/sun.jpg); }
+
+.join-picture {
+  background-image: url(../img/garden.jpg); }
+
 hr {
   display: inline-block;
   padding-left: 10rem;
@@ -652,6 +670,21 @@ table {
     padding: 1rem; }
   table tr:nth-child(3) {
     background-color: #fcfcfc; }
+
+.table-credits {
+  margin-left: 0; }
+  .table-credits th {
+    text-align: center;
+    padding: 2rem; }
+  .table-credits td {
+    padding: 2rem; }
+
+.quotes {
+  padding: 2rem;
+  margin: 2rem;
+  background-color: #f4f4f4; }
+  .quotes p {
+    font-weight: bold; }
 
 .section-inside {
   background-color: #fff; }
@@ -820,6 +853,10 @@ table {
       border-bottom: 1px solid transparent; }
     .navigation__item--nested li a:hover, .navigation__item--nested li a:active {
       border-bottom: 1px solid teal; }
+    .navigation__item--nested--nested {
+      list-style-type: disc;
+      margin-left: 7rem;
+      margin-bottom: -1rem; }
 
 .navigation__link {
   display: inline-block;

@@ -64,6 +64,24 @@
 .refer-picture {
   background-image: url(../img/trees.jpg);
 }
+.leader-picture {
+  background-image: url(../img/beachbeauty.jpg);
+}
+.intro-picture {
+  background-image: url(../img/leader.jpg);
+}
+.bground-picture {
+  background-image: url(../img/clear.jpg);
+}
+.desc-picture {
+  background-image: url(../img/flowers.jpg);
+}
+.staff-picture {
+  background-image: url(../img/sun.jpg);
+}
+.join-picture {
+  background-image: url(../img/garden.jpg);
+}
 
 hr {
   display: inline-block;
@@ -186,6 +204,8 @@ hr {
     }
 
 }
+
+
 table {
   font-size: $default-font-size;
     margin-left: 2.5rem;
@@ -207,4 +227,30 @@ table {
     tr:nth-child(3) {
       background-color: #fcfcfc;
     }
+}
+
+.table-credits {
+  margin-left: 0;
+
+  th {
+    text-align: center;
+    padding: 2rem;
+  }
+
+  td {
+    padding: 2rem;
+  }
+}
+// .quotes:nth-child(even) {
+//   background-color: #f4f4f4;
+// }
+.quotes {
+  padding: 2rem;
+  margin: 2rem;
+  background-color: #f4f4f4;
+
+  p {
+    font-weight: bold;
+
+  }
 }
