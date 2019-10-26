@@ -82,6 +82,33 @@
 .join-picture {
   background-image: url(../img/garden.jpg);
 }
+.therapy-picture {
+  background-image: url(../img/blossom.jpg);
+}
+.contiedu-picture {
+  background-image: url(../img/blue.jpg);
+}
+.therapycredits-picture {
+  background-image: url(../img/daylight.jpg);
+}
+.nursing-picture {
+  background-image: url(../img/alaska.jpg);
+}
+.nursingbenefits-picture {
+  background-image: url(../img/cloudsday.jpg);
+}
+.nursingcredits-picture {
+  background-image: url(../img/alpine.jpg);
+}
+.nursingendorse-picture {
+  background-image: url(../img/clouds.jpg);
+}
+.nursingarticle-picture {
+  background-image: url(../img/cascade.jpg);
+}
+.nursingworkshop-picture {
+  background-image: url(../img/beautyblossom.jpg);
+}
 
 hr {
   display: inline-block;
@@ -253,4 +280,26 @@ table {
     font-weight: bold;
 
   }
+}
+
+.article-link {
+
+  li {
+    a {
+      &:link,
+      &:visited {
+        text-decoration: none;
+        color: teal;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        padding-bottom: 3px;
+        border-bottom: 1px solid transparent;
+      }
+      &:hover,
+      &:active {
+          border-bottom: 1px solid teal;
+      }
+    }
+  }
+
 }
