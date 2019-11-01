@@ -109,6 +109,9 @@
 .nursingworkshop-picture {
   background-image: url(../img/beautyblossom.jpg);
 }
+.articles-picture {
+  background-image: url(../img/green.jpg);
+}
 
 hr {
   display: inline-block;
@@ -120,6 +123,13 @@ hr {
 //  border: .5px solid grey;
   background-image: linear-gradient(90deg, rgba(0,0,0,.05) 0%,
                                             rgba(0,0,0,.1) 100%);
+}
+
+.trademark-line{
+  display: block;
+  padding: 0;
+  margin-top: 7rem;
+  height: 1px;
 }
 
 .work-hr {
