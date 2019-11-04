@@ -152,6 +152,9 @@ body {
 .u-center-text {
   text-align: center; }
 
+.u-center-left {
+  text-align: left !important; }
+
 .u-italicize-text {
   font-style: italic; }
 
@@ -724,6 +727,16 @@ table {
   .table-credits td {
     padding: 2rem; }
 
+.books-table {
+  font-size: 1.5rem;
+  margin-left: 0; }
+  .books-table th {
+    padding: .5rem;
+    background-color: #f7f7f7; }
+
+.cd-img {
+  width: 65%; }
+
 .quotes {
   padding: 2rem;
   margin: 2rem;
@@ -740,6 +753,17 @@ table {
   border-bottom: 1px solid transparent; }
 
 .article-link li a:hover, .article-link li a:active {
+  border-bottom: 1px solid teal; }
+
+.page-link:link, .page-link:visited {
+  text-decoration: none;
+  color: teal;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  padding-bottom: 3px;
+  border-bottom: 1px solid transparent; }
+
+.page-link:hover, .page-link:active {
   border-bottom: 1px solid teal; }
 
 .section-inside {

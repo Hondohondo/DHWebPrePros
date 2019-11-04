@@ -278,6 +278,29 @@ table {
     padding: 2rem;
   }
 }
+
+.books-table {
+  font-size: 1.5rem;
+margin-left: 0;
+
+
+  th {
+padding: .5rem;
+
+background-color: #f7f7f7;
+// background-color: #f1f1f1;
+// background-color: #fff;
+
+  }
+
+  td {
+
+  }
+}
+
+.cd-img {
+  width: 65%;
+}
 // .quotes:nth-child(even) {
 //   background-color: #f4f4f4;
 // }
@@ -293,7 +316,6 @@ table {
 }
 
 .article-link {
-
   li {
     a {
       &:link,
@@ -311,5 +333,8 @@ table {
       }
     }
   }
+}
 
+.page-link {
+  @include page-links;
 }
