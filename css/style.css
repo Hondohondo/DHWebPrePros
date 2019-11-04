@@ -152,6 +152,9 @@ body {
 .u-center-text {
   text-align: center; }
 
+.u-italicize-text {
+  font-style: italic; }
+
 .u-margin-bottom-big {
   margin-bottom: 8rem; }
 
