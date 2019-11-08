@@ -168,7 +168,7 @@ body {
   margin-right: 3rem !important; }
 
 .u-margin-bottom-small {
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem !important; }
 
 .u-margin-bottom-small-1 {
   margin-bottom: 1rem !important; }
@@ -720,6 +720,9 @@ hr {
   padding: 1rem;
   border-bottom: 1px solid #e8e8e8;
   margin-bottom: 1rem; }
+
+.title-width {
+  width: 80%; }
 
 table {
   font-size: 1.6rem;
