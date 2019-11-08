@@ -242,6 +242,17 @@ hr {
 
 }
 
+.books-titles {
+  // width: 90%;
+    font-size: $default-font-size;
+    color: teal;
+    background-color: #f7f7f7;
+    // background-color: #fcfcfc;
+    padding: 1rem;
+    border-bottom: 1px solid #e8e8e8;
+    margin-bottom: 1rem;
+}
+
 
 table {
   font-size: $default-font-size;
@@ -299,7 +310,15 @@ background-color: #f7f7f7;
 }
 
 .cd-img {
-  width: 65%;
+  width: 70%;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  border: 1px solid teal;
+  border-radius: 1rem;
+}
+
+.col-1-of-5 .cd-img {
+width: 120%;
 }
 // .quotes:nth-child(even) {
 //   background-color: #f4f4f4;
