@@ -1,5 +1,5 @@
 .u-center-text {
-    text-align: center; //inline block get centered in the parent...
+    text-align: center !important; //inline block get centered in the parent...
 }
 
 .u-center-left {
@@ -8,6 +8,10 @@
 
 .u-italicize-text {
   font-style: italic;
+}
+
+.normal-font {
+  font-weight: normal !important;
 }
 
 .u-margin-bottom-big {

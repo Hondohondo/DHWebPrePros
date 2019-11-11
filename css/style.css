@@ -150,13 +150,16 @@ body {
     margin-bottom: 3rem; }
 
 .u-center-text {
-  text-align: center; }
+  text-align: center !important; }
 
 .u-center-left {
   text-align: left !important; }
 
 .u-italicize-text {
   font-style: italic; }
+
+.normal-font {
+  font-weight: normal !important; }
 
 .u-margin-bottom-big {
   margin-bottom: 8rem; }
