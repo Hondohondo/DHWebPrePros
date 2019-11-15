@@ -170,6 +170,9 @@ body {
 .u-margin-right-medium {
   margin-right: 3rem !important; }
 
+.u-margin-left-medium {
+  margin-left: 3rem !important; }
+
 .u-margin-bottom-small {
   margin-bottom: 1.5rem !important; }
 
@@ -189,7 +192,7 @@ body {
   margin-top: 1.5rem; }
 
 .u-margin-top-small-1 {
-  margin-top: 1rem; }
+  margin-top: 1rem !important; }
 
 .u-margin-top-small-2 {
   margin-top: 2.5rem; }
