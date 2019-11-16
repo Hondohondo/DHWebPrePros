@@ -189,13 +189,13 @@ body {
   margin-top: 4rem; }
 
 .u-margin-top-small {
-  margin-top: 1.5rem; }
+  margin-top: 1.5rem !important; }
 
 .u-margin-top-small-1 {
   margin-top: 1rem !important; }
 
 .u-margin-top-small-2 {
-  margin-top: 2.5rem; }
+  margin-top: 2.5rem !important; }
 
 .small-font-p {
   margin-bottom: 2.5rem !important; }
@@ -970,7 +970,8 @@ table {
     .navigation__item--nested--nested {
       list-style-type: disc;
       margin-left: 7rem;
-      margin-bottom: -1rem; }
+      margin-bottom: -1rem;
+      color: #999; }
 
 .navigation__link {
   display: inline-block;
