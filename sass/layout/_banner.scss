@@ -359,5 +359,9 @@ width: 120%;
 }
 
 .page-link {
+
+  margin-left: 0 !important;
+  
   @include page-links;
+
 }

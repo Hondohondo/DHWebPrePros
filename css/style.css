@@ -787,16 +787,17 @@ table {
 .article-link li a:hover, .article-link li a:active {
   border-bottom: 1px solid teal; }
 
-.page-link:link, .page-link:visited {
-  text-decoration: none;
-  color: teal;
-  margin-right: 1rem;
-  margin-left: 1rem;
-  padding-bottom: 3px;
-  border-bottom: 1px solid transparent; }
-
-.page-link:hover, .page-link:active {
-  border-bottom: 1px solid teal; }
+.page-link {
+  margin-left: 0 !important; }
+  .page-link:link, .page-link:visited {
+    text-decoration: none;
+    color: teal;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    padding-bottom: 3px;
+    border-bottom: 1px solid transparent; }
+  .page-link:hover, .page-link:active {
+    border-bottom: 1px solid teal; }
 
 .section-inside {
   background-color: #fff; }
