@@ -152,6 +152,9 @@ body {
 .u-center-text {
   text-align: center !important; }
 
+.u-center-text-div {
+  display: inline-block; }
+
 .u-center-left {
   text-align: left !important; }
 
@@ -201,6 +204,9 @@ body {
   margin-bottom: 2.5rem !important; }
   .small-font-p p {
     font-size: 1.5rem !important; }
+
+.n-tr {
+  background-color: #fcfcfc !important; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;

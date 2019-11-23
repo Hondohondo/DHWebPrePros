@@ -2,6 +2,12 @@
     text-align: center !important; //inline block get centered in the parent...
 }
 
+.u-center-text-div {
+    // margin: 0 auto !important;
+    // text-align: center;
+    display: inline-block;
+}
+
 .u-center-left {
     text-align: left !important;
 }
@@ -66,4 +72,8 @@
   p {
     font-size: 1.5rem !important;
   }
+}
+
+.n-tr {
+  background-color: #fcfcfc !important;
 }
