@@ -211,6 +211,77 @@ body {
 .n-tr {
   background-color: #fcfcfc !important; }
 
+.color-blue {
+  color: #fff;
+  background-color: teal; }
+
+.hero {
+  height: 60rem;
+  position: relative;
+  margin: 8rem 0; }
+
+.hero:hover .hero__quote {
+  -webkit-transform: translateX(1.5rem);
+  -ms-transform: translateX(1.5rem);
+  transform: translateX(1.5rem); }
+
+.hero:hover .hero__img {
+  -webkit-transform: translateX(-1.5rem);
+  -ms-transform: translateX(-1.5rem);
+  transform: translateX(-1.5rem); }
+
+.hero:hover .hero__overlay {
+  background-color: rgba(0, 0, 0, 0.3); }
+
+.hero__quote:hover + .hero__overlay {
+  background-color: rgba(0, 0, 0, 0.7); }
+
+.hero__quote {
+  position: absolute;
+  font-size: 2.2rem;
+  padding: 3rem;
+  font-style: italic;
+  top: 9rem;
+  left: 10%;
+  max-width: 40rem;
+  color: #F9FAFA;
+  z-index: 10;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  -o-transition: transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s; }
+
+.hero__img {
+  width: calc(100% + 2rem);
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  z-index: 5;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  -o-transition: transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s; }
+
+.hero__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  width: 100%;
+  z-index: 9;
+  -webkit-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s; }
+
+#hero__img-1 {
+  background-image: url(img/why-js-back-1.jpeg); }
+
+#hero__img-2 {
+  background-image: url(img/why-js-back-2.jpeg); }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -761,6 +832,11 @@ table {
   .table-credits td {
     padding: 2rem; }
 
+.table-praises {
+  border: 1px solid #e8e8e8; }
+  .table-praises tr:nth-child(odd) {
+    background-color: #fcfcfc; }
+
 .books-table {
   font-size: 1.5rem;
   margin-left: 0; }
@@ -807,6 +883,37 @@ table {
     border-bottom: 1px solid transparent; }
   .page-link:hover, .page-link:active {
     border-bottom: 1px solid teal; }
+
+.poem {
+  height: 120rem;
+  position: relative; }
+
+.poem__quote {
+  position: absolute;
+  font-size: 2.2rem;
+  padding: 1rem;
+  font-style: italic;
+  top: 9rem;
+  left: 10%;
+  max-width: 40rem;
+  color: #F9FAFA;
+  z-index: 10;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  -o-transition: transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s; }
+
+.poem__img {
+  height: 100%;
+  z-index: 5;
+  background-repeat: no-repeat; }
+
+#poem__img-1 {
+  background-image: url(../img/wisdom.jpg); }
+
+#poem__img-2 {
+  background-image: url(img/why-js-back-2.jpeg); }
 
 .section-inside {
   background-color: #fff; }
