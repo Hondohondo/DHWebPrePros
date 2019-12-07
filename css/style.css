@@ -215,72 +215,14 @@ body {
   color: #fff;
   background-color: teal; }
 
-.hero {
-  height: 60rem;
-  position: relative;
-  margin: 8rem 0; }
-
-.hero:hover .hero__quote {
-  -webkit-transform: translateX(1.5rem);
-  -ms-transform: translateX(1.5rem);
-  transform: translateX(1.5rem); }
-
-.hero:hover .hero__img {
-  -webkit-transform: translateX(-1.5rem);
-  -ms-transform: translateX(-1.5rem);
-  transform: translateX(-1.5rem); }
-
-.hero:hover .hero__overlay {
-  background-color: rgba(0, 0, 0, 0.3); }
-
-.hero__quote:hover + .hero__overlay {
-  background-color: rgba(0, 0, 0, 0.7); }
-
-.hero__quote {
-  position: absolute;
-  font-size: 2.2rem;
-  padding: 3rem;
-  font-style: italic;
-  top: 9rem;
-  left: 10%;
-  max-width: 40rem;
-  color: #F9FAFA;
-  z-index: 10;
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
-  -o-transition: transform 0.5s;
-  transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s; }
-
-.hero__img {
-  width: calc(100% + 2rem);
-  height: 100%;
-  background-size: cover;
-  background-position: center center;
-  z-index: 5;
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
-  -o-transition: transform 0.5s;
-  transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s; }
-
-.hero__overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  height: 100%;
-  width: 100%;
-  z-index: 9;
-  -webkit-transition: background-color 0.5s;
-  -o-transition: background-color 0.5s;
-  transition: background-color 0.5s; }
-
-#hero__img-1 {
-  background-image: url(img/why-js-back-1.jpeg); }
-
-#hero__img-2 {
-  background-image: url(img/why-js-back-2.jpeg); }
+.table-schedules {
+  position: relative; }
+  .table-schedules td, .table-schedules th {
+    padding: 1rem !important; }
+  .table-schedules th {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
