@@ -1234,7 +1234,8 @@ table {
 
 .section-content {
   height: 100vh;
-  background-image: url(../img/hero2.jpg);
+  height: 80vh;
+  background-image: url(../img/ira2.jpg);
   background-size: cover;
   background-position: top; }
 
