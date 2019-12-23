@@ -284,7 +284,11 @@
     height: 80vh;
 
     // background-image: url(../img/ira-photo.png);
-    background-image: url(../img/ira2.jpg);
+    // background-image: url(../img/ira2.jpg);
+    background-image: linear-gradient(
+        rgba($color-black, 0.7),
+        rgba($color-black, 0.7)),
+    url(../img/ira2.jpg);
     // background-image: linear-gradient(
     //     to right bottom,
     //     rgba($color-primary-light, 0.801),
@@ -292,6 +296,30 @@
     // url(../img/ira-potrait.jpg);
     background-size: cover;
     background-position: top;
+
+    position: relative;
+
+    header {
+      // position: relative;
+      .hero-text-box{
+        position: absolute;
+        // width: 104rem;
+        // width: 66%;
+        top: 60%;
+        left: 37%;
+        transform: translate(-50%,-50%);
+      }
+       h1 {
+         color: $color-white;
+         font-size: 2.2rem;
+         // font-weight: 300;
+         // text-transform: uppercase;
+         // letter-spacing: 1px;
+         // word-spacing: 3px;
+         margin-bottom: 2rem;
+
+       }
+    }
 
 }
 
@@ -349,7 +377,8 @@
 
 .section-the-method {
    // background: #edeeed url(../img/themethod.jpg) no-repeat center top;
-    height: 100vh;
+    // height: 100vh;
+    height: 80vh;
     background-image: linear-gradient(-105deg,
                     rgba(255, 255, 255, 0.9) 0%,
                      rgba(255, 255, 255, 0.9) 50%,

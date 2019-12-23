@@ -1,3 +1,64 @@
+// Home page Button
+// Home page Button
+// Home page Button
+.btan {
+  font-size: 1.6rem;
+
+  &:link,
+  &:visited {
+  display: inline-block;
+  padding: 1rem 3rem;
+  // font-weight: 300;
+  text-decoration: none;
+  transition: background-color 0.2s border 0.2s color 0.2s;
+}
+
+  &-full{
+
+    &:link,
+    &:visited {
+    color: $color-white;
+    background-color: $teal-color;
+    // border-radius: 20rem;
+    border: 1px solid $teal-color;
+    margin-right: 1.5rem;
+  }
+
+  &:hover,
+  &:active {
+    border: 1px solid $color-teal;
+  }
+}
+
+  &-ghost {
+
+    &:link,
+    &:visited {
+    border: 1px solid $teal-color;
+    color: $teal-color;
+  }
+
+  &:hover,
+  &:active {
+    border: 1px solid $color-teal;
+    color: $color-white;
+  }
+}
+
+&:hover,
+&:active {
+  background-color: $color-teal;
+}
+
+
+}
+
+
+// Other  Button
+// Other  Button
+// Other  Button
+
+
 .btn {
 
     &:link,
