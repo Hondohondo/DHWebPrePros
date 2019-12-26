@@ -280,26 +280,27 @@
 
 .section-content {
     //height: 95vh;
-   height: 100vh;
-    height: 80vh;
+   // height: 100vh;
+    // height: 80vh;
+    height: 85vh;
 
     background-image: linear-gradient(80deg,
-                    rgba(255, 255, 255, 0.9) 0%,
-                     rgba(255, 255, 255, 0.9) 55%,
+                    rgba(255, 255, 255, 0.8) 0%,
+                     rgba(255, 255, 255, 0.8) 55%,
                      transparent 80%),
                      url(../img/ira2.jpg);
 
-    background-image: linear-gradient(80deg,
-                    rgba(0, 0, 0, 0.8) 0%,
-                     rgba(0, 0, 0, 0.8) 55%,
-                     transparent 80%),
-                     url(../img/ira2.jpg);
-
-    background-image: linear-gradient(80deg,
-                    rgba(255, 189, 189, 0.8) 0%,
-                     rgba(54, 115, 72, 0.8) 55%,
-                     transparent 80%),
-                     url(../img/ira2.jpg);
+    // background-image: linear-gradient(80deg,
+    //                 rgba(0, 0, 0, 0.8) 0%,
+    //                  rgba(0, 0, 0, 0.8) 55%,
+    //                  transparent 80%),
+    //                  url(../img/ira2.jpg);
+    //
+    // background-image: linear-gradient(80deg,
+    //                 rgba(255, 189, 189, 0.8) 0%,
+    //                  rgba(54, 115, 72, 0.8) 55%,
+    //                  transparent 80%),
+    //                  url(../img/ira2.jpg);
 
     // background-image: url(../img/ira-photo.png);
     // background-image: url(../img/ira2.jpg);
@@ -311,7 +312,13 @@
     //     to right bottom,
     //     rgba($color-primary-light, 0.801),
     //     rgba($color-primary-dark, 0.801)),
-    // url(../img/ira-potrait.jpg);
+    // url(../img/ira2.jpg);
+    // background-image: linear-gradient(
+    //     80deg,
+    //     rgba($color-primary-light, 0.901) 0%,
+    //     rgba($color-primary-dark, 0.901) 45%,
+    //        transparent 80%),
+    // url(../img/ira2.jpg);
     background-size: cover;
     background-position: top;
 
@@ -323,24 +330,27 @@
         position: absolute;
         // width: 104rem;
         // width: 66%;
-        top: 60%;
+        top: 55%;
         left: 30%;
         transform: translate(-50%,-50%);
 
        h1 {
          color: $color-white;
-         // color: #5d6e73;
+         color: #5d6e73;
+         color: #5e6f91;
          // color: $color-grey-dark;
+          // color: midnightblue;
 
-         font-size: 2.2rem;
+         font-size: 2.5rem;
          // font-weight: 300;
          // text-transform: uppercase;
          // letter-spacing: 1px;
          // word-spacing: 3px;
-         margin-bottom: 2rem;
+         margin-bottom: 4.5rem;
 
          .tagline {
-           font-weight: 300;
+           font-weight: 400;
+
            // text-transform: uppercase;
          }
 
@@ -348,9 +358,14 @@
 
        .tagline2 {
          font-style: italic;
-         margin-top: 3rem;
-         font-size: 1.6rem;
-         color: $color-black;
+         margin-top: 3.5rem;
+         font-size: 1.9rem;
+         // font-weight: 400;
+         color: midnightblue;
+         color: #5d6e73;
+         color: #5e6f91;
+         // color: wheat;
+         // text-shadow: 1px 0px black;
        }
      }
     }
