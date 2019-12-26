@@ -1047,10 +1047,12 @@ table {
       display: inline-block;
       text-decoration: none;
       color: #009999;
-      padding-bottom: 3px;
-      border-bottom: 1px solid transparent; }
+      border-bottom: 1.5px solid transparent;
+      -webkit-transition: border .2s;
+      -o-transition: border .2s;
+      transition: border .2s; }
     .navigation__item--nested li a:hover, .navigation__item--nested li a:active {
-      border-bottom: 1px solid teal; }
+      border-bottom: 1.5px solid teal; }
     .navigation__item--nested--nested {
       list-style-type: disc;
       margin-left: 7rem;
@@ -1060,10 +1062,11 @@ table {
 .navigation__link {
   display: inline-block;
   padding: 0rem 1rem;
-  font-size: 1.8rem;
-  font-weight: 500;
+  font-size: 1.9rem;
+  font-weight: 700;
   color: midnightblue;
-  text-decoration: none; }
+  text-decoration: none;
+  color: #5e6f91; }
 
 .section-recent {
   background-color: #fff; }
@@ -1297,7 +1300,7 @@ table {
       font-size: 1.2rem;
       font-weight: 500;
       text-transform: uppercase;
-      color: midnightblue;
+      color: #5e6f91;
       margin-bottom: 0.6rem; }
     .section-workshop .entry-text .heading-one {
       font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -1320,7 +1323,7 @@ table {
     .section-workshop .entry-reasons .entry-reasons-container .heading-four {
       font-size: 1.7rem;
       margin-bottom: 1rem;
-      color: midnightblue; }
+      color: #5e6f91; }
 
 .section-the-method {
   height: 80vh;
@@ -1336,7 +1339,7 @@ table {
     font-size: 1.2rem;
     font-weight: 500;
     text-transform: uppercase;
-    color: midnightblue;
+    color: #5e6f91;
     margin-bottom: .6rem; }
   .section-the-method .heading-one {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
