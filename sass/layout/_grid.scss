@@ -13,6 +13,10 @@
         }
     }
 
+    @include respond(tab-port){
+      // max-width: 50rem;jonas
+    }
+
     @include clearfix;
 
     //* = any,  ^ = start with,  $ = end with
@@ -22,7 +26,18 @@
 
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
+
+            @include respond(tab-port){
+              // margin-right: 0;jonas
+              // margin-bottom: $gutter-vertical-small;jonas
+            }
         }
+
+        @include respond(tab-port){
+          // width: 100% !important;jonas
+        }
+
+
 
     }
 
