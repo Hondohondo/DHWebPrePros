@@ -1,4 +1,23 @@
 /*
+O - 600px:          Phone
+600 - 900px:        Tablet potrait mode
+900 - 1200px:        Tablet landscape mode
+
+[1200 - 1800px]     Normal styles apply...the styles when first building the website
+1800px + :          Big Screens / Big Desktops
+
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER TO DO MEDIA QUERIES: Base + Tyography > General Layout > Grid > Page Layout > Components
+
+1em = 16px
+
+*/
+/*
 COLORS:
 
 Light green: #7ed56f
@@ -88,7 +107,19 @@ Dark green: #28b485
 html {
   height: 100%;
   font-size: 62.5%;
-  /*  10px/16   */ }
+  /* 1rem = 10px; 10px/16px = 62.5%  */ }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%;
+      /* 1rem = 9px; 9px/16px = 56.25%  */ } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%;
+      /* 1rem = 8px; 8px/16px = 50%  */ } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%;
+      /* 1rem = 12px; 12px/16px = 75%  */ } }
 
 body {
   height: 100%;
@@ -473,6 +504,9 @@ textarea {
   .footer__logo-box {
     text-align: left;
     margin-bottom: 2rem; }
+    @media (max-width: 28.125em) {
+      .footer__logo-box {
+        display: inline-block; } }
   .footer__logo {
     width: 8rem;
     height: auto;
@@ -484,6 +518,9 @@ textarea {
   .footer__list {
     list-style: none;
     float: right; }
+    @media (max-width: 28.125em) {
+      .footer__list {
+        float: none; } }
   .footer__item {
     display: inline-block;
     font-size: 3.5rem; }
@@ -966,6 +1003,9 @@ table {
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 4rem; }
+    @media (max-width: 28.125em) {
+      .row:not(:last-child) {
+        margin-bottom: 0rem; } }
   .row::after {
     content: "";
     display: table;
@@ -976,6 +1016,10 @@ table {
       margin-right: 6rem; }
   .row .col-1-of-2 {
     width: calc( (100% - 6rem) / 2); }
+    @media (max-width: 28.125em) {
+      .row .col-1-of-2 {
+        width: 100%;
+        margin-bottom: 2.5rem; } }
   .row .col-1-of-3 {
     width: calc( (100% - 2 * 6rem) / 3); }
   .row .col-2-of-3 {
@@ -1005,11 +1049,17 @@ table {
     overflow: scroll;
     max-height: 100%;
     padding-bottom: 6rem; }
+    @media (max-width: 56.25em) {
+      .expand .col-0-of-3 {
+        display: none; } }
   .expand .col-3-of-3 {
     width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem);
     float: left;
     overflow: scroll;
     max-height: 100%; }
+    @media (max-width: 56.25em) {
+      .expand .col-3-of-3 {
+        width: 100%; } }
 
 .header {
   /* background-image: url(../img/hero.jpg); */ }
@@ -1275,12 +1325,21 @@ table {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
+    @media (max-width: 37.5em) {
+      .section-content header .hero-text-box {
+        left: 34%; } }
     .section-content header .hero-text-box h1 {
       color: #fff;
       color: #5d6e73;
       color: #5e6f91;
       font-size: 2.5rem;
       margin-bottom: 4.5rem; }
+      @media (max-width: 37.5em) {
+        .section-content header .hero-text-box h1 {
+          font-size: 2rem; } }
+      @media (max-width: 28.125em) {
+        .section-content header .hero-text-box h1 {
+          font-size: 1.6rem; } }
       .section-content header .hero-text-box h1 .tagline {
         font-weight: 400; }
     .section-content header .hero-text-box .tagline2 {
@@ -1290,6 +1349,12 @@ table {
       color: midnightblue;
       color: #5d6e73;
       color: #5e6f91; }
+      @media (max-width: 37.5em) {
+        .section-content header .hero-text-box .tagline2 {
+          font-size: 1.5rem; } }
+      @media (max-width: 28.125em) {
+        .section-content header .hero-text-box .tagline2 {
+          font-size: 1.2rem; } }
 
 .section-workshop {
   padding: 7%;
@@ -1331,6 +1396,11 @@ table {
   background-image: -o-linear-gradient(195deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 80%), url(../img/bench.jpg);
   background-image: linear-gradient(-105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 80%), url(../img/bench.jpg);
   background-size: cover; }
+  @media (max-width: 28.125em) {
+    .section-the-method {
+      background-image: -webkit-linear-gradient(195deg, rgba(255, 255, 255, 0.9) 100%, rgba(255, 255, 255, 0.9) 100%, transparent 100%), url(../img/bench.jpg);
+      background-image: -o-linear-gradient(195deg, rgba(255, 255, 255, 0.9) 100%, rgba(255, 255, 255, 0.9) 100%, transparent 100%), url(../img/bench.jpg);
+      background-image: linear-gradient(-105deg, rgba(255, 255, 255, 0.9) 100%, rgba(255, 255, 255, 0.9) 100%, transparent 100%), url(../img/bench.jpg); } }
   .section-the-method .method-panel {
     padding: 9% 7%; }
     .section-the-method .method-panel .btn-text {

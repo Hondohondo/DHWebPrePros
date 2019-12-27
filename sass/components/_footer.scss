@@ -4,7 +4,7 @@
     // background-color: darkslategrey;
     // background-color: #142e14;
   //  background-color: darkcyan;
-   
+
     // padding: 10rem 0;
     // font-size: 1.4rem;
 
@@ -26,6 +26,9 @@
         //     margin-bottom: 2rem;
         //     float: left;
         // }
+        @include respond(small-phone){
+          display: inline-block;
+        }
 
     }
 
@@ -49,12 +52,16 @@
     &__list {
         list-style: none;
         float: right;
+
+        @include respond(small-phone){
+          float: none;
+        }
     }
 
     &__item {
         display: inline-block;
         font-size: 3.5rem;
-        
+
         &:not(:last-child) {
             margin-right: 1.5rem;
         }
@@ -65,7 +72,7 @@
         &:link,
         &:visited {
             color: #eeeeee;
-            background-color: #005050; 
+            background-color: #005050;
             // text-decoration: none;
             // text-transform: uppercase;
             display: inline-block;
@@ -77,14 +84,14 @@
             width: 6.6rem;
             border-radius: 50%;
             padding-top: 1.1rem;
-            
+
         }
 
         &:hover,
         &:active {
             // color: teal;
             box-shadow: 0 1rem 2rem rgba($color-black, .4);
-            
+
         }
 
         &:hover .icon-mail {
@@ -132,9 +139,3 @@
 .para_link:active {
     color: #ccc;
 }
-
-
-
-
-
-
