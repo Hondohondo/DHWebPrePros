@@ -54,7 +54,7 @@
         float: right;
 
         @include respond(small-phone){
-          float: none;
+          float: none
         }
     }
 
