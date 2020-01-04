@@ -1075,7 +1075,6 @@ table {
         display: none; } }
   .expand .col-3-of-3 {
     width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem);
-    float: left;
     overflow: scroll;
     max-height: 100%; }
     @media (max-width: 56.25em) {
@@ -1450,40 +1449,38 @@ table {
 
 .section-content {
   height: 85vh;
+  width: 100%;
+  position: relative;
   background-image: -webkit-linear-gradient(10deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 55%, transparent 80%), url(../img/ira2.jpg);
   background-image: -o-linear-gradient(10deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 55%, transparent 80%), url(../img/ira2.jpg);
   background-image: linear-gradient(80deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 55%, transparent 80%), url(../img/ira2.jpg);
   background-size: cover;
-  background-position: top;
-  position: relative; }
+  background-position: top; }
   @media (max-width: 28.125em) {
     .section-content {
       height: 55vh; } }
-  .section-content header .hero-text-box {
+  .section-content .hero-text-box {
     position: absolute;
-    top: 55%;
-    left: 30%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); }
+    left: 4rem;
+    top: 10rem; }
     @media (max-width: 37.5em) {
-      .section-content header .hero-text-box {
+      .section-content .hero-text-box {
         left: 34%; } }
-    .section-content header .hero-text-box h1 {
+    .section-content .hero-text-box h1 {
       color: #fff;
       color: #5d6e73;
       color: #5e6f91;
       font-size: 2.5rem;
       margin-bottom: 4.5rem; }
       @media (max-width: 37.5em) {
-        .section-content header .hero-text-box h1 {
+        .section-content .hero-text-box h1 {
           font-size: 2rem; } }
       @media (max-width: 28.125em) {
-        .section-content header .hero-text-box h1 {
+        .section-content .hero-text-box h1 {
           font-size: 1.6rem; } }
-      .section-content header .hero-text-box h1 .tagline {
+      .section-content .hero-text-box h1 .tagline {
         font-weight: 400; }
-    .section-content header .hero-text-box .tagline2 {
+    .section-content .hero-text-box .tagline2 {
       font-style: italic;
       margin-top: 3.5rem;
       font-size: 1.9rem;
@@ -1491,10 +1488,10 @@ table {
       color: #5d6e73;
       color: #5e6f91; }
       @media (max-width: 37.5em) {
-        .section-content header .hero-text-box .tagline2 {
+        .section-content .hero-text-box .tagline2 {
           font-size: 1.5rem; } }
       @media (max-width: 28.125em) {
-        .section-content header .hero-text-box .tagline2 {
+        .section-content .hero-text-box .tagline2 {
           font-size: 1.2rem; } }
 
 .section-workshop {

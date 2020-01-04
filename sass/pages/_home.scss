@@ -283,6 +283,8 @@
    // height: 100vh;
     // height: 80vh;
     height: 85vh;
+    width: 100%;
+    position: relative;
 
     @include respond(small-phone){
     height: 55vh;
@@ -326,17 +328,18 @@
     background-size: cover;
     background-position: top;
 
-    position: relative;
-
-    header {
-      // position: relative;
       .hero-text-box{
         position: absolute;
         // width: 104rem;
         // width: 66%;
-        top: 55%;
-        left: 30%;
-        transform: translate(-50%,-50%);
+        // top: 55%;
+        // left: 30%;
+        // transform: translate(-50%,-50%);
+        // right: 40px;
+        left: 4rem;
+        top: 10rem;
+        // width: 500px;
+        // height: 200px;
 
         @include respond(phone){
           // left: 34%;
@@ -393,7 +396,7 @@
          }
        }
      }
-    }
+
 
 }
 
