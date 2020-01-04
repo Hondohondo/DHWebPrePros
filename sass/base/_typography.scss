@@ -8,23 +8,21 @@ body {
     line-height: 1.7;
     color: $color-grey-dark;
     // padding: 3rem; //padding around all the body...gives it a unique look.
-
 }
-
-
 
 .heading-primary {
     // color: $color-white;
     color: $color-teal;
     // text-transform: uppercase;
 
-    backface-visibility: hidden;
+    // backface-visibility: hidden;
     // margin-bottom: 6rem;
+    // text-align: right;
 
 
     &--main {
         display: block;
-        font-size: 2.2rem;
+        font-size: 1.85rem;
         // font-weight: 400;
         // letter-spacing: 3.5rem;
 
@@ -36,16 +34,31 @@ body {
         animation-delay: 3s;
         animation-iteration-count: 3;
         */
+        @include respond(desktop2){ //this asks is width < 1400?
+          font-size: 1.8rem;
+        }
+        @include respond(desktop1){ //this asks is width < 1350?
+          font-size: 1.7rem;
+        }
+        @include respond(desktop){ //this asks is width < 1300?
+          font-size: 1.55rem;
+        }
+
+        @include respond(tab-port2){ //this asks is width < 1300?
+          font-size: 1.85rem;
+        }
     }
 
     &--sub {
 
-        text-align: right;
+        // text-align: right;
+        //
+        //
+        // display: block;
+        font-size: 2.2rem;
+        // margin-top: -1rem;
 
 
-        display: block;
-        font-size: 2.6rem;
-        margin-top: -1rem;
         // font-weight: 700;
         // letter-spacing: 1.75rem;
         // animation: moveInRight 1s ease-out;
