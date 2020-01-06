@@ -12,6 +12,10 @@
     padding: 6rem;
     color: #929292;
     // color: #f7f7f7;
+
+    @include respond(big-phone){
+      padding: 3rem;
+    }
     p {
         margin-bottom: .3rem;
         // line-height: 2rem;
@@ -26,7 +30,10 @@
         //     margin-bottom: 2rem;
         //     float: left;
         // }
-        @include respond(small-phone){
+        // @include respond(small-phone){
+        //   display: inline-block;
+        // }
+        @include respond(big-phone){
           display: inline-block;
         }
 
@@ -53,8 +60,15 @@
         list-style: none;
         float: right;
 
-        @include respond(small-phone){
-          float: none
+
+        // @include respond(small-phone){
+        //   float: none
+        // }
+
+        @include respond(big-phone){
+        float: none;
+        border-top: 1px solid #777;
+        padding-top: 2rem;
         }
     }
 
@@ -109,10 +123,35 @@
     }
 
     &__copyright {
-        color: #f7f7f7;
-        float: right;
-        width: 80%;
-        padding-top: 2rem;
+        // color: #f7f7f7;
+        // float: right;
+        // width: 80%;
+        // padding-top: 2rem;
+
+          p:first-child {
+
+            @include respond(big-phone){
+            border-top: 1px solid #777;
+            padding-top: 2rem;
+            }
+
+          }
+
+          @include respond(big-phone){
+            margin: 0 auto;
+            max-width: 50rem;
+            padding: 0 3rem;
+          }
+    }
+
+    &__contacts {
+      @include respond(big-phone){
+
+        padding: 0 3rem;
+        margin: 0 auto;
+        max-width: 50rem;
+
+      }
     }
 }
 

@@ -68,11 +68,26 @@ ORDER TO DO MEDIA QUERIES: Base + Tyography > General Layout > Grid > Page Layou
   @if $breakpoint == small-phone {
       @media (max-width: 28.125em) { @content}; //450px
   }
+  @if $breakpoint == small-phone1 {
+      @media (max-width: 31.25em) { @content}; //500px
+  }
     @if $breakpoint == phone {
         @media (max-width: 37.5em) { @content}; //600px
     }
+    @if $breakpoint == phone1 {
+        @media (max-width: 43.75em) { @content}; //700px
+    }
+    @if $breakpoint == big-phone {
+        @media (max-width: 46.875em) { @content}; //750px
+    }
+    @if $breakpoint == big-phone1 {
+        @media (max-width: 50em) { @content}; //800px
+    }
     @if $breakpoint == tab-port {
         @media (max-width: 56.25em) { @content}; //900px
+    }
+    @if $breakpoint == tab-port1 {
+        @media (max-width: 62.5em) { @content}; //1000px
     }
     @if $breakpoint == tab-port2 {
         @media (max-width: 68.75em) { @content}; //1100px

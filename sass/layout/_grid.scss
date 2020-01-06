@@ -8,9 +8,10 @@
         // margin-bottom: $gutter-vertical;
         margin-bottom: 4rem;
 
-        @include respond(small-phone){
+        @include respond(big-phone){
           margin-bottom: 0rem;
         }
+
     }
 
     @include respond(tab-port){
@@ -44,7 +45,11 @@
     .col-1-of-2 {
         width: calc( (100% - #{$gutter-horizontal}) / 2 );
 
-        @include respond(small-phone){
+        // @include respond(small-phone){
+        //   width: 100%;
+        //   margin-bottom: 2.5rem;
+        // }
+        @include respond(big-phone){
           width: 100%;
           margin-bottom: 2.5rem;
         }

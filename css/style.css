@@ -114,7 +114,7 @@ html {
       /* 1rem = 9px; 9px/16px = 56.25%  */ } }
   @media (max-width: 56.25em) {
     html {
-      font-size: 50%;
+      font-size: 60%;
       /* 1rem = 8px; 8px/16px = 50%  */ } }
   @media (min-width: 112.5em) {
     html {
@@ -278,6 +278,12 @@ body {
 
 .btan {
   font-size: 1.6rem; }
+  @media (max-width: 37.5em) {
+    .btan {
+      font-size: 1.5rem; } }
+  @media (max-width: 31.25em) {
+    .btan {
+      font-size: 1.4rem; } }
   .btan:link, .btan:visited {
     display: inline-block;
     padding: 1rem 3rem;
@@ -285,6 +291,12 @@ body {
     -webkit-transition: background-color 0.2s border 0.2s color 0.2s;
     -o-transition: background-color 0.2s border 0.2s color 0.2s;
     transition: background-color 0.2s border 0.2s color 0.2s; }
+    @media (max-width: 37.5em) {
+      .btan:link, .btan:visited {
+        padding: .5rem 2.5rem; } }
+    @media (max-width: 31.25em) {
+      .btan:link, .btan:visited {
+        padding: .5rem 2rem; } }
   .btan-full:link, .btan-full:visited {
     color: #fff;
     background-color: #008080;
@@ -520,12 +532,15 @@ textarea {
   font-size: 1.6rem;
   padding: 6rem;
   color: #929292; }
+  @media (max-width: 46.875em) {
+    .footer {
+      padding: 3rem; } }
   .footer p {
     margin-bottom: .3rem; }
   .footer__logo-box {
     text-align: left;
     margin-bottom: 2rem; }
-    @media (max-width: 28.125em) {
+    @media (max-width: 46.875em) {
       .footer__logo-box {
         display: inline-block; } }
   .footer__logo {
@@ -539,9 +554,11 @@ textarea {
   .footer__list {
     list-style: none;
     float: right; }
-    @media (max-width: 28.125em) {
+    @media (max-width: 46.875em) {
       .footer__list {
-        float: none; } }
+        float: none;
+        border-top: 1px solid #777;
+        padding-top: 2rem; } }
   .footer__item {
     display: inline-block;
     font-size: 3.5rem; }
@@ -567,11 +584,20 @@ textarea {
     color: #3b5998; }
   .footer__link:hover .icon-tw {
     color: #00aced; }
-  .footer__copyright {
-    color: #f7f7f7;
-    float: right;
-    width: 80%;
-    padding-top: 2rem; }
+  @media (max-width: 46.875em) {
+    .footer__copyright p:first-child {
+      border-top: 1px solid #777;
+      padding-top: 2rem; } }
+  @media (max-width: 46.875em) {
+    .footer__copyright {
+      margin: 0 auto;
+      max-width: 50rem;
+      padding: 0 3rem; } }
+  @media (max-width: 46.875em) {
+    .footer__contacts {
+      padding: 0 3rem;
+      margin: 0 auto;
+      max-width: 50rem; } }
 
 .icon-mail,
 .icon-fb,
@@ -1024,7 +1050,7 @@ table {
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 4rem; }
-    @media (max-width: 28.125em) {
+    @media (max-width: 46.875em) {
       .row:not(:last-child) {
         margin-bottom: 0rem; } }
   .row::after {
@@ -1037,7 +1063,7 @@ table {
       margin-right: 6rem; }
   .row .col-1-of-2 {
     width: calc( (100% - 6rem) / 2); }
-    @media (max-width: 28.125em) {
+    @media (max-width: 46.875em) {
       .row .col-1-of-2 {
         width: 100%;
         margin-bottom: 2.5rem; } }
@@ -1448,7 +1474,7 @@ table {
       margin-bottom: 3rem; }
 
 .section-content {
-  height: 85vh;
+  height: 80vh;
   width: 100%;
   position: relative;
   background-image: -webkit-linear-gradient(10deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 55%, transparent 80%), url(../img/ira2.jpg);
@@ -1456,28 +1482,91 @@ table {
   background-image: linear-gradient(80deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 55%, transparent 80%), url(../img/ira2.jpg);
   background-size: cover;
   background-position: top; }
-  @media (max-width: 28.125em) {
+  @media (max-width: 81.25em) {
+    .section-content {
+      height: 75vh; } }
+  @media (max-width: 75em) {
+    .section-content {
+      height: 70vh; } }
+  @media (max-width: 68.75em) {
+    .section-content {
+      height: 65vh; } }
+  @media (max-width: 62.5em) {
+    .section-content {
+      height: 60vh; } }
+  @media (max-width: 56.25em) {
+    .section-content {
+      height: 75vh; } }
+  @media (max-width: 50em) {
+    .section-content {
+      height: 70vh; } }
+  @media (max-width: 46.875em) {
+    .section-content {
+      height: 65vh; } }
+  @media (max-width: 43.75em) {
+    .section-content {
+      height: 60vh; } }
+  @media (max-width: 37.5em) {
     .section-content {
       height: 55vh; } }
   .section-content .hero-text-box {
     position: absolute;
     left: 4rem;
     top: 10rem; }
+    @media (max-width: 62.5em) {
+      .section-content .hero-text-box {
+        left: 2.5rem; } }
+    @media (max-width: 56.25em) {
+      .section-content .hero-text-box {
+        left: 6rem;
+        top: 12rem; } }
+    @media (max-width: 50em) {
+      .section-content .hero-text-box {
+        left: 5rem;
+        top: 10rem; } }
+    @media (max-width: 46.875em) {
+      .section-content .hero-text-box {
+        left: 4rem;
+        top: 9rem; } }
     @media (max-width: 37.5em) {
       .section-content .hero-text-box {
-        left: 34%; } }
+        left: 3rem;
+        top: 9rem; } }
+    @media (max-width: 31.25em) {
+      .section-content .hero-text-box {
+        left: 2rem; } }
     .section-content .hero-text-box h1 {
       color: #fff;
       color: #5d6e73;
       color: #5e6f91;
       font-size: 2.5rem;
       margin-bottom: 4.5rem; }
-      @media (max-width: 37.5em) {
+      @media (max-width: 87.5em) {
+        .section-content .hero-text-box h1 {
+          font-size: 2.3rem; } }
+      @media (max-width: 81.25em) {
+        .section-content .hero-text-box h1 {
+          font-size: 2.1rem; } }
+      @media (max-width: 75em) {
         .section-content .hero-text-box h1 {
           font-size: 2rem; } }
-      @media (max-width: 28.125em) {
+      @media (max-width: 68.75em) {
         .section-content .hero-text-box h1 {
-          font-size: 1.6rem; } }
+          font-size: 1.8rem; } }
+      @media (max-width: 56.25em) {
+        .section-content .hero-text-box h1 {
+          font-size: 2.1rem; } }
+      @media (max-width: 46.875em) {
+        .section-content .hero-text-box h1 {
+          font-size: 1.8rem; } }
+      @media (max-width: 37.5em) {
+        .section-content .hero-text-box h1 {
+          font-size: 1.65rem;
+          margin-bottom: 3rem; } }
+      @media (max-width: 31.25em) {
+        .section-content .hero-text-box h1 {
+          font-size: 1.6rem;
+          margin-bottom: 2.5rem; } }
       .section-content .hero-text-box h1 .tagline {
         font-weight: 400; }
     .section-content .hero-text-box .tagline2 {
@@ -1487,12 +1576,29 @@ table {
       color: midnightblue;
       color: #5d6e73;
       color: #5e6f91; }
+      @media (max-width: 87.5em) {
+        .section-content .hero-text-box .tagline2 {
+          font-size: 1.8rem; } }
+      @media (max-width: 81.25em) {
+        .section-content .hero-text-box .tagline2 {
+          font-size: 1.7rem; } }
+      @media (max-width: 68.75em) {
+        .section-content .hero-text-box .tagline2 {
+          font-size: 1.6rem; } }
+      @media (max-width: 56.25em) {
+        .section-content .hero-text-box .tagline2 {
+          font-size: 1.7rem; } }
+      @media (max-width: 46.875em) {
+        .section-content .hero-text-box .tagline2 {
+          font-size: 1.6rem; } }
       @media (max-width: 37.5em) {
         .section-content .hero-text-box .tagline2 {
-          font-size: 1.5rem; } }
-      @media (max-width: 28.125em) {
+          font-size: 1.5rem;
+          margin-top: 2.5rem; } }
+      @media (max-width: 31.25em) {
         .section-content .hero-text-box .tagline2 {
-          font-size: 1.2rem; } }
+          font-size: 1.4rem;
+          margin-top: 2rem; } }
 
 .section-workshop {
   padding: 7%;
@@ -1534,8 +1640,9 @@ table {
   background-image: -o-linear-gradient(195deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 80%), url(../img/bench.jpg);
   background-image: linear-gradient(-105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 80%), url(../img/bench.jpg);
   background-size: cover; }
-  @media (max-width: 28.125em) {
+  @media (max-width: 46.875em) {
     .section-the-method {
+      height: 70vh;
       background-image: -webkit-linear-gradient(195deg, rgba(255, 255, 255, 0.9) 100%, rgba(255, 255, 255, 0.9) 100%, transparent 100%), url(../img/bench.jpg);
       background-image: -o-linear-gradient(195deg, rgba(255, 255, 255, 0.9) 100%, rgba(255, 255, 255, 0.9) 100%, transparent 100%), url(../img/bench.jpg);
       background-image: linear-gradient(-105deg, rgba(255, 255, 255, 0.9) 100%, rgba(255, 255, 255, 0.9) 100%, transparent 100%), url(../img/bench.jpg); } }
