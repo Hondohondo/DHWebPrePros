@@ -68,6 +68,9 @@ ORDER TO DO MEDIA QUERIES: Base + Tyography > General Layout > Grid > Page Layou
   @if $breakpoint == tiny-screen {
       @media (max-width: 21.875em) { @content}; //350px
   }
+  @if $breakpoint == tiny-screen2 {
+      @media (max-width: 23.4375em) { @content}; //375px
+  }
   @if $breakpoint == small-screen {
       @media (max-width: 25em) { @content}; //400px
   }

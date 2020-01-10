@@ -294,11 +294,14 @@
       height: 70vh;
     }
     @include respond(tab-port2){
-      height: 40vh;
+      height: 35vh;
+      // height: 70vh;
+        // background-position: top;
+        // background-size: cover;
     }
-    // @include respond(tab-port1){
-    //   height: 60vh;
-    // }
+    @include respond(tab-port1){
+      height: 50vh;
+    }
     // @include respond(tab-port){
     //   height: 75vh;
     // }
@@ -331,6 +334,9 @@
     height: 65vh;
     }
     @include respond(small-screen){
+    height: 90vh;
+    }
+    @include respond(tiny-screen2){
     height: 100vh;
     }
     @include respond(tiny-screen){
