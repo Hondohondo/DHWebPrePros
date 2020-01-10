@@ -294,23 +294,23 @@
       height: 70vh;
     }
     @include respond(tab-port2){
-      height: 65vh;
+      height: 40vh;
     }
-    @include respond(tab-port1){
-      height: 60vh;
-    }
-    @include respond(tab-port){
-      height: 75vh;
-    }
-    @include respond(big-phone1){
-      height: 70vh;
-    }
-    @include respond(big-phone){
-      height: 65vh;
-    }
-    @include respond(phone1){
-      height: 60vh;
-    }
+    // @include respond(tab-port1){
+    //   height: 60vh;
+    // }
+    // @include respond(tab-port){
+    //   height: 75vh;
+    // }
+    // @include respond(big-phone1){
+    //   height: 70vh;
+    // }
+    // @include respond(big-phone){
+    //   height: 65vh;
+    // }
+    // @include respond(phone1){
+    //   height: 60vh;
+    // }
     @include respond(phone){
       height: 55vh;
     }
@@ -579,7 +579,7 @@
 .section-the-method {
    // background: #edeeed url(../img/themethod.jpg) no-repeat center top;
     // height: 100vh;
-    height: 80vh;
+    // height: 80vh;
     background-image: linear-gradient(-105deg,
                     rgba(255, 255, 255, 0.9) 0%,
                      rgba(255, 255, 255, 0.9) 50%,
@@ -595,7 +595,7 @@
     //                    url(../img/bench.jpg);
     // }
     @include respond(big-phone){
-      height: 70vh;
+      // height: 70vh;
 
       background-image: linear-gradient(-105deg,
                       rgba(255, 255, 255, 0.9) 100%,

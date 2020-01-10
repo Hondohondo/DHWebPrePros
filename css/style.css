@@ -1495,22 +1495,7 @@ table {
       height: 70vh; } }
   @media (max-width: 68.75em) {
     .section-content {
-      height: 65vh; } }
-  @media (max-width: 62.5em) {
-    .section-content {
-      height: 60vh; } }
-  @media (max-width: 56.25em) {
-    .section-content {
-      height: 75vh; } }
-  @media (max-width: 50em) {
-    .section-content {
-      height: 70vh; } }
-  @media (max-width: 46.875em) {
-    .section-content {
-      height: 65vh; } }
-  @media (max-width: 43.75em) {
-    .section-content {
-      height: 60vh; } }
+      height: 40vh; } }
   @media (max-width: 37.5em) {
     .section-content {
       height: 55vh; } }
@@ -1658,14 +1643,12 @@ table {
       color: #5e6f91; }
 
 .section-the-method {
-  height: 80vh;
   background-image: -webkit-linear-gradient(195deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 80%), url(../img/bench.jpg);
   background-image: -o-linear-gradient(195deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 80%), url(../img/bench.jpg);
   background-image: linear-gradient(-105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 80%), url(../img/bench.jpg);
   background-size: cover; }
   @media (max-width: 46.875em) {
     .section-the-method {
-      height: 70vh;
       background-image: -webkit-linear-gradient(195deg, rgba(255, 255, 255, 0.9) 100%, rgba(255, 255, 255, 0.9) 100%, transparent 100%), url(../img/bench.jpg);
       background-image: -o-linear-gradient(195deg, rgba(255, 255, 255, 0.9) 100%, rgba(255, 255, 255, 0.9) 100%, transparent 100%), url(../img/bench.jpg);
       background-image: linear-gradient(-105deg, rgba(255, 255, 255, 0.9) 100%, rgba(255, 255, 255, 0.9) 100%, transparent 100%), url(../img/bench.jpg); } }
