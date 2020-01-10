@@ -557,7 +557,7 @@ textarea {
     @media (max-width: 46.875em) {
       .footer__list {
         float: none;
-        border-top: 1px solid #777;
+        border-top: .7px solid #777;
         padding-top: 2rem; } }
   .footer__item {
     display: inline-block;
@@ -586,7 +586,7 @@ textarea {
     color: #00aced; }
   @media (max-width: 46.875em) {
     .footer__copyright p:first-child {
-      border-top: 1px solid #777;
+      border-top: .7px solid #777;
       padding-top: 2rem; } }
   @media (max-width: 46.875em) {
     .footer__copyright {
@@ -1081,7 +1081,9 @@ table {
     width: calc( (100% - 4 * 6rem) / 5); }
 
 .expand {
-  max-width: 100% !important;
+  background-color: #eee;
+  margin: 0 auto;
+  max-width: 100%;
   height: 100%; }
   .expand::after {
     content: "";
@@ -1106,6 +1108,11 @@ table {
     @media (max-width: 56.25em) {
       .expand .col-3-of-3 {
         width: 100%; } }
+
+.green-bar {
+  background-color: #009999;
+  z-index: 9999;
+  position: relative; }
 
 .header {
   padding: 5%; }
@@ -1475,13 +1482,11 @@ table {
 
 .section-content {
   height: 80vh;
-  width: 100%;
   position: relative;
   background-image: -webkit-linear-gradient(10deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 55%, transparent 80%), url(../img/ira2.jpg);
   background-image: -o-linear-gradient(10deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 55%, transparent 80%), url(../img/ira2.jpg);
   background-image: linear-gradient(80deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 55%, transparent 80%), url(../img/ira2.jpg);
-  background-size: cover;
-  background-position: top; }
+  background-size: cover; }
   @media (max-width: 81.25em) {
     .section-content {
       height: 75vh; } }
@@ -1509,6 +1514,21 @@ table {
   @media (max-width: 37.5em) {
     .section-content {
       height: 55vh; } }
+  @media (max-width: 31.25em) {
+    .section-content {
+      background-image: -webkit-linear-gradient(10deg, rgba(255, 255, 255, 0.9) 50%, rgba(255, 255, 255, 0.9) 25%, transparent 120%), url(../img/ira2.jpg);
+      background-image: -o-linear-gradient(10deg, rgba(255, 255, 255, 0.9) 50%, rgba(255, 255, 255, 0.9) 25%, transparent 120%), url(../img/ira2.jpg);
+      background-image: linear-gradient(80deg, rgba(255, 255, 255, 0.9) 50%, rgba(255, 255, 255, 0.9) 25%, transparent 120%), url(../img/ira2.jpg);
+      background-position: right; } }
+  @media (max-width: 28.125em) {
+    .section-content {
+      height: 65vh; } }
+  @media (max-width: 25em) {
+    .section-content {
+      height: 100vh; } }
+  @media (max-width: 21.875em) {
+    .section-content {
+      height: 120vh; } }
   .section-content .hero-text-box {
     position: absolute;
     left: 4rem;
@@ -1539,7 +1559,9 @@ table {
       color: #fff;
       color: #5d6e73;
       color: #5e6f91;
-      font-size: 2.5rem;
+      color: #04266b;
+      font-size: 2.6rem;
+      font-weight: 500;
       margin-bottom: 4.5rem; }
       @media (max-width: 87.5em) {
         .section-content .hero-text-box h1 {
@@ -1565,10 +1587,11 @@ table {
           margin-bottom: 3rem; } }
       @media (max-width: 31.25em) {
         .section-content .hero-text-box h1 {
-          font-size: 1.6rem;
+          font-weight: 400;
+          font-size: 2.2rem;
           margin-bottom: 2.5rem; } }
       .section-content .hero-text-box h1 .tagline {
-        font-weight: 400; }
+        font-weight: 350; }
     .section-content .hero-text-box .tagline2 {
       font-style: italic;
       margin-top: 3.5rem;
@@ -1648,6 +1671,9 @@ table {
       background-image: linear-gradient(-105deg, rgba(255, 255, 255, 0.9) 100%, rgba(255, 255, 255, 0.9) 100%, transparent 100%), url(../img/bench.jpg); } }
   .section-the-method .method-panel {
     padding: 9% 7%; }
+    @media (max-width: 46.875em) {
+      .section-the-method .method-panel {
+        padding-left: 8rem; } }
     .section-the-method .method-panel .btn-text {
       margin-left: 0; }
   .section-the-method .heading-five {

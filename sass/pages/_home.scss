@@ -283,7 +283,7 @@
    // height: 100vh;
     // height: 80vh;
     height: 80vh;
-    width: 100%;
+    // width: 100%;
     position: relative;
 
     @include respond(desktop){
@@ -315,8 +315,26 @@
       height: 55vh;
     }
 
+    @include respond(small-phone1){
+    // height: 65vh;
+    // height: 100vh;
+
+    background-image: linear-gradient(80deg,
+                    rgba(255, 255, 255, 0.9) 50%,
+                     rgba(255, 255, 255, 0.9) 25%,
+                     transparent 120%),
+                     url(../img/ira2.jpg);
+  background-position: right;
+    }
+
     @include respond(small-phone){
-    // height: 50vh;
+    height: 65vh;
+    }
+    @include respond(small-screen){
+    height: 100vh;
+    }
+    @include respond(tiny-screen){
+    height: 120vh;
     }
 
     background-image: linear-gradient(80deg,
@@ -340,7 +358,23 @@
     //                  url(../img/ira2.jpg);
 
     background-size: cover;
-    background-position: top;
+    // background-position: top;
+    // background-position: right;
+    // background-position: center;
+    // background-attachment: fixed;
+    // background-size: 100%;
+    // background-size: cover;
+
+// background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/ira2.jpg);
+// background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/hero-min.jpg);
+
+        // background-image: linear-gradient(to right bottom, rgba(126,213,111,0.8), rgba(40,180,133,0.8)),url(../img/hero.jpg);
+        // background-image: linear-gradient(80deg,
+        //                 rgba(255, 255, 255, 0.7) 0%,
+        //                  rgba(255, 255, 255, 0.7) 55%,
+        //                  transparent 80%),
+        //                  url(../img/ira2.jpg);
+
 
       .hero-text-box{
         position: absolute;
@@ -377,17 +411,25 @@
         }
         @include respond(small-phone1){
            left: 2rem;
+           // width: 40rem;
+           // position: absolute;;
+           // top: 50%;
+           // left: 30%;
+           // transform: translate(-20%, -50%);
         }
 
        h1 {
          color: $color-white;
          color: #5d6e73;
          color: #5e6f91;
+         color: #04266b;
+
          // color: $color-grey-dark;
           // color: midnightblue;
 
-         font-size: 2.5rem;
-         // font-weight: 300;
+         font-size: 2.6rem;
+         // font-size: 3.5rem;
+         font-weight: 500;
          // text-transform: uppercase;
          // letter-spacing: 1px;
          // word-spacing: 3px;
@@ -420,12 +462,17 @@
               margin-bottom: 3rem;
          }
          @include respond(small-phone1){
-              font-size: 1.6rem;
-              margin-bottom: 2.5rem;
+           // text-align: left;
+           // text-transform: uppercase;
+           font-weight: 400;
+          font-size: 2.2rem;
+          margin-bottom: 2.5rem;
+                 // color: $color-white;
+
          }
 
          .tagline {
-           font-weight: 400;
+           font-weight: 350;
 
            // text-transform: uppercase;
          }
@@ -560,8 +607,17 @@
     .method-panel {
         padding: 9% 7%;
 
+        @include respond(big-phone){
+              // padding: 9% 9%;
+              padding-left: 8rem;
+        }
+
         .btn-text {
             margin-left: 0;
+
+            @include respond(big-phone){
+                // margin-left: 2rem;
+            }
         }
     }
 

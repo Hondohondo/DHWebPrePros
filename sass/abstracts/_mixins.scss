@@ -65,6 +65,12 @@ ORDER TO DO MEDIA QUERIES: Base + Tyography > General Layout > Grid > Page Layou
 */
 
 @mixin respond($breakpoint) {
+  @if $breakpoint == tiny-screen {
+      @media (max-width: 21.875em) { @content}; //350px
+  }
+  @if $breakpoint == small-screen {
+      @media (max-width: 25em) { @content}; //400px
+  }
   @if $breakpoint == small-phone {
       @media (max-width: 28.125em) { @content}; //450px
   }

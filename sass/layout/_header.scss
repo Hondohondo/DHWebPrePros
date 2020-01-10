@@ -2,6 +2,12 @@
 
 }
 
+.green-bar {
+  background-color: $color-teal;
+  z-index: 9999;
+  position: relative;
+}
+
 .header {
   padding: 5%;
   // width: 40rem;

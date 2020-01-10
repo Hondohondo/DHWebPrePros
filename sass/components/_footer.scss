@@ -67,7 +67,7 @@
 
         @include respond(big-phone){
         float: none;
-        border-top: 1px solid #777;
+        border-top: .7px solid #777;
         padding-top: 2rem;
         }
     }
@@ -131,7 +131,7 @@
           p:first-child {
 
             @include respond(big-phone){
-            border-top: 1px solid #777;
+            border-top: .7px solid #777;
             padding-top: 2rem;
             }
 

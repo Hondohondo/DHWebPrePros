@@ -1,6 +1,7 @@
 .row {
     max-width: $grid-width; //max means if we have enough available space then it will have that width specified but if not (smaller than that) then it will have 100% of the available space
     // background-color: #eee; //nice grey
+
      margin: 0 auto; //center block element inside another block element
     //.row:last-child -- only select last child
     //.row:not
@@ -82,9 +83,15 @@
 }
 
 .expand {
-    max-width: 100% !important;
+// padding: 30px;
+    background-color: #eee; //nice grey
+    margin: 0 auto;
+    // max-width: 100% !important;
+    max-width: $xtreme-gen2-width;
     // width: 100% !important;
     height: 100%;
+    // max-height: 100%;
+    // height: 100vh;
 
     &:not(:last-child) { //everything except last child
         // margin-bottom: $gutter-vertical;
@@ -100,7 +107,8 @@
         //margin-right: 0 !important;
       //  background-color: lightblue;
 
-       //background-color: aquamarine;
+       // background-color: aquamarine;
+       // background-color: #d5d2d5;
       // background-image: linear-gradient(90deg, #4c5e6a 0%, #37444c 100%);
       background-image: url(../img/spiral1.jpg);
      //background-image: url(../img/bg4.jpg);
@@ -113,11 +121,15 @@
         // height: 120%;
         overflow: scroll;
         max-height: 100%;
+        // height: 100%;
+        // height: 50%;
+        // height: 100vh;
         padding-bottom: 6rem;
         // overflow-y: scroll;
     //    overflow-x: hidden;
 
   // @include clearfix;
+
 
 
 
@@ -134,8 +146,13 @@
         // margin-left: calc( (100% - 2 * #{$gutter-horizontal}) / 3 + #{$gutter-horizontal} );
         overflow: scroll;
         max-height: 100%;
+        // height: 100%;
+        // height: 80rem;
+        // height: 100vh;
+        // height: 50%;
 
           // @include clearfix;
+
 
         @include respond(tab-port){
           width: 100%;
